@@ -109,6 +109,7 @@ const SignIn = () => {
           type="password"
           placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && handleLogin(e)}
         />
         <Button onClick={handleLogin}>Sign in</Button>
         <Title>or</Title>
